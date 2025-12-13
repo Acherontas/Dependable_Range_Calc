@@ -1,0 +1,21 @@
+enter main number only 
+3.98248e+12 0
+as number main 3.98248e+12
+as a number 0
+
+Reporting In main fuction
+Main number : 3.98248e+12
+
+Initial sum = 54
+
+---------Internal Sum -----------
+|---> 9
+|---> Exiting with 9
+--------End of Sum------------
+
+
+Secondary : 0
+
+Initial sum = 0
+
+
