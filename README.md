@@ -1,5 +1,5 @@
 # Of_Range_Calculate_Sum_Dependable
-the other half tends to 9 (dependable)
+(dependable) the other half tends to 9 
 
 
 u give a number
