@@ -1,0 +1,25 @@
+enter main number only 
+3926 014578
+as number main 3926
+as a number 14578
+
+Reporting In main fuction
+Main number : 3926
+
+Initial sum = 20
+
+---------Internal Sum -----------
+|---> 2
+|---> Exiting with 2
+--------End of Sum------------
+
+
+Secondary : 14578
+
+Initial sum = 25
+
+---------Internal Sum -----------
+|---> 7
+|---> Exiting with 7
+--------End of Sum------------
+
