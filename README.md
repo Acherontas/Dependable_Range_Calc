@@ -1,5 +1,5 @@
 # Of_Range_Calculate_Sum
-the other half tends to 9
+the other half tends to 9 (dependable)
 
 
 u give a number
@@ -7,7 +7,7 @@ it finds the remainning number
 
 and then calculate the sums
 
-u get the 9
+u get the 9 (dependable)
 
 
 for any information
