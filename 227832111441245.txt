@@ -1,0 +1,49 @@
+enter main number only 
+enter preci
+2.27832e+14 069
+as number main 2.27832e+14
+as a number 69
+
+Reporting In main fuction
+Main number : 2.27832e+14
+
+Initial sum = 47
+
+---------Internal Sum -----------
+|---> 11
+|---> 2
+|---> Exiting with 2
+--------End of Sum------------
+
+
+Secondary : 69
+
+Initial sum = 15
+
+---------Internal Sum -----------
+|---> 6
+|---> Exiting with 6
+--------End of Sum------------
+
+---------------Main Result Set of [range] ---------- 
+---------------Results ::== 2 and 6
+---------------Main Result Set of [range] ---------- 
+
+|of 9 - 6 ::== 3
+    |---------------------------------------------
+    | 3 + 1  ::== 4 | 
+    | 3 -1  ::== 2 | 
+    | 4 + 2 ::== 6 | 
+    | 3 * 2 ::== 6 | 
+    | of Possibles ::== 4 or 2 | 
+    | of dri's ::== 2 with 2 and 
+    | 1 with 1 | 
+    |---------------------------------------------
+FOUND @Intpart 2 of dr 2
+FOUND @dr 2 with 2
+FOUND @-1 2
+                       Checking others
+                         9 - 4 ::== 5
+                         9 - 2 ::== 7
+intpart                  5 / 2 ::== 2.5
+                         FOUND @one 2.5 of 2
