@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1765626342 source:/home/acherontas/codeblocks/range_9_cdi_menoun_arm64/main.cpp
+	<iostream>
+	"leght_and_vec.h"
+	"sum_cdi.h"
+	<thread>
+
+1765873669 source:/home/acherontas/codeblocks/range_9_cdi_menoun_arm64/src/leght_and_vec.cpp
+	"leght_and_vec.h"
+	<thread>
+
+1765873669 /home/acherontas/codeblocks/range_9_cdi_menoun_arm64/include/leght_and_vec.h
+	<string>
+	<iostream>
+	<vector>
+
+1763035892 source:/home/acherontas/codeblocks/range_9_cdi_menoun_arm64/src/sum_cdi.cpp
+	"sum_cdi.h"
+
+1763035892 /home/acherontas/codeblocks/range_9_cdi_menoun_arm64/include/sum_cdi.h
+	<iostream>
+	<string>
+	<math.h>
+	<iomanip>
+

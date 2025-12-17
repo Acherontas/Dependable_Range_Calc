@@ -1,0 +1,103 @@
+#include <iostream>
+#include "leght_and_vec.h"
+#include "sum_cdi.h"
+#include <thread>
+#include "math.h"
+#include <iomanip>
+
+using namespace std;
+
+int main(int argc,char** argv)
+{
+    long double mn;
+    cout<<"enter main number only \n";
+    mn=stoll(argv[1]);
+    int preci;
+    cout<<"enter preci\n";
+    preci=stoi(argv[2]);
+    leght_and_vec *lavc=new leght_and_vec();
+    lavc->find_remain(mn,preci);
+    int ari_one;
+    int ari_two;
+    int magic_ni=9;
+    int magic_tw=2;
+    cout<<"\n";
+    cout<<"Reporting In main fuction\n";
+    sum_cdi *smcd=new sum_cdi();
+    cout<<"Main number : " <<  mn <<"\n";
+    ari_one=smcd->cdis(mn,1);
+    std::this_thread::sleep_for(std::chrono::milliseconds(preci));
+    cout<<"\n";
+    cout<<"Secondary : "  << lavc->da_remains <<"\n";
+    ari_two=smcd->cdis(lavc->da_remains,1);
+    cout<<"---------------Main Result Set of [range] ---------- \n";
+    cout<<"---------------Results ::== " << ari_one << " and " << ari_two <<"\n";
+    cout<<"---------------Main Result Set of [range] ---------- \n";
+    cout<<"\n";
+    int mgc=magic_ni-ari_two;
+    cout<<"|of " << magic_ni << " - " << ari_two << " ::== " << mgc <<"\n";
+    if(ari_one==mgc){cout<<"FOUND @first " << mgc <<"\n";}
+    int sin_ena;
+    int plin_ena;
+    sin_ena=mgc+1;
+    plin_ena=mgc-1;
+    long double dr=(long double)sin_ena/(long double)magic_tw;
+    long double dri=(long double)plin_ena/(long double)magic_tw;
+    long double fractpart,intpart;
+    long double frc,intpt;
+    fractpart=modf(dr,&intpart);
+    frc=modf(dri,&intpt);
+    int xr=sin_ena+plin_ena;
+    int yr=mgc*2;
+    cout<<"    |---------------------------------------------\n";
+    cout<<"    | " << mgc << " + 1 " << " ::== " << sin_ena <<" | " << "\n";
+    cout<<"    | " << mgc << " -1 " << " ::== " << plin_ena <<" | " << "\n";
+    cout<<"    | " << sin_ena << " + " << plin_ena << " ::== " << xr << " | " << "\n";
+    cout<<"    | " << mgc << " * " << 2 <<" ::== " << yr << " | " << "\n";
+    cout<<"    | " << "of Possibles ::== " << sin_ena << " or " << plin_ena <<" | " << "\n";
+    cout<<"    | " << "of dri's ::== " << dr << " with " << intpart << " and \n";
+    cout<<"    | " << dri << " with " << intpt << " | " << "\n";
+    cout<<"    |---------------------------------------------\n";
+    if(ari_one==intpart){cout<<"FOUND @Intpart " << intpart << " of dr " << dr<<"\n";}
+    if(ari_one==intpt){cout<<"FOUND @Intpt " << intpt << " of dri " << dri<<"\n";}
+    if(ari_one==yr){cout<<"FOUND @yr " << yr <<"\n";}
+    if(ari_one==xr){cout<<"FOUND @xr " << xr <<"\n";}
+    if(ari_one==dr){cout<<"FOUND @dr " << intpart << " with " << dr <<"\n";}
+    if(ari_one==dri){cout<<"FOUND @dri  "<< intpt << " with " << dri <<"\n";}
+    if(ari_one==sin_ena){cout<<"FOUND @+1 " << sin_ena <<"\n";}
+    if(ari_one==plin_ena){cout<<"FOUND @-1 " << plin_ena <<"\n";}
+    if(ari_one==magic_ni){cout<<"FOUND @9 " << magic_ni <<"\n";}
+                    cout<<"                       Checking others\n";
+                    int lki=magic_ni-sin_ena;
+                    int mki=magic_ni-plin_ena;
+                    cout<<"                         "<<magic_ni<< " - " << sin_ena << " ::== " << lki <<"\n";
+                    cout<<"                         "<<magic_ni<<" - " << plin_ena << " ::== " << mki <<"\n";
+                    long double drr=(long double)lki/(long double)magic_tw;
+                    long double drri=(long double)mki/(long double)magic_tw;
+                    long double freactpart,intrpart;
+                    long double ferc,intrpt;
+                    freactpart=modf(drr,&intrpart);
+                    ferc=modf(drri,&intrpt);
+                    if(ari_one==lki){
+                                    cout<<"                         ";
+                                    cout<<"FOUND @one " << lki <<"\n";
+                                    }
+                    if(ari_one==mki){
+                                    cout<<"                         ";
+                                    cout<<"FOUND @two " << mki <<"\n";
+                                    }
+
+                    if(ari_one==intrpart){
+                                        cout<<"                         ";
+                                        cout<<lki << " / " << magic_tw << " ::== " << drr <<"\n";
+                                        cout<<"FOUND @one " << drr <<" of " << intrpart <<"\n";
+                                        }
+                    if(ari_one==intrpt){
+                                        cout<<"                         ";
+                                        cout<<mki << " / " << magic_tw << " ::== " << drri <<"\n";                     ";
+                                        cout<<"FOUND @one " << drri <<" of " << intrpt <<"\n";
+                                        }
+
+
+    return 0;
+}

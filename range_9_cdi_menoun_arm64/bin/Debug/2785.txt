@@ -1,0 +1,25 @@
+enter main number only 
+2785 013469
+as number main 2785
+as a number 13469
+
+Reporting In main fuction
+Main number : 2785
+
+Initial sum = 22
+
+---------Internal Sum -----------
+|---> 4
+|---> Exiting with 4
+--------End of Sum------------
+
+
+Secondary : 13469
+
+Initial sum = 23
+
+---------Internal Sum -----------
+|---> 5
+|---> Exiting with 5
+--------End of Sum------------
+

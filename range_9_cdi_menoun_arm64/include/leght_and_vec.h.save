@@ -1,0 +1,29 @@
+#ifndef LEGHT_AND_VEC_H
+#define LEGHT_AND_VEC_H
+#include <string>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class leght_and_vec
+{
+    public:
+        leght_and_vec();
+        virtual ~leght_and_vec();
+        leght_and_vec(const leght_and_vec& other);
+        leght_and_vec& operator=(const leght_and_vec& other);
+        int da_lenght=0;
+        vector<int> each_one;
+        int ar[11][3];
+        int get_lenght(long double xmn,int preci);
+        vector<int> remain;
+        string da_remain;
+        long double da_remains;
+        int find_remain(long double xmn);
+
+    protected:
+
+    private:
+};
+
+#endif // LEGHT_AND_VEC_H

@@ -1,0 +1,22 @@
+enter main number only 
+7.88956e+07 034
+as number main 7.88956e+07
+as a number 34
+
+Reporting In main fuction
+Main number : 7.88956e+07
+
+Initial sum = 46
+
+---------Internal Sum -----------
+|---> 10
+|---> 1
+|---> Exiting with 1
+--------End of Sum------------
+
+
+Secondary : 34
+
+Initial sum = 7
+
+
